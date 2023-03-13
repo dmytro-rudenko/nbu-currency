@@ -4,8 +4,6 @@ interface Currency {
   cc: string;
 }
 
-declare const foundCurrency: (currency: string) => (item: Currency) => boolean;
-
 declare const getCurrencyExchangeData: () => Promise<Currency[]>;
 
 declare const exchangeCurrency: (
