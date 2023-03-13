@@ -1,10 +1,4 @@
-interface Currency {
-  txt: string;
-  rate: number;
-  cc: string;
-}
-
-declare const getCurrencyExchangeData: () => Promise<Currency[]>;
+declare const getCurrencyExchangeData: () => Promise<any[]>;
 
 declare const exchangeCurrency: (
   amount: number,
@@ -12,12 +6,9 @@ declare const exchangeCurrency: (
   toCurrency?: string,
 ) => Promise<number>;
 
-export default {
-  exchangeCurrency,
-  getCurrencyExchangeData,
+declare const nbuCurrency: {
+  getCurrencyExchangeData: typeof getCurrencyExchangeData;
+  exchangeCurrency:  typeof exchangeCurrency;
 };
 
-export {
-  getCurrencyExchangeData,
-  exchangeCurrency,
-};
+export default nbuCurrency;
