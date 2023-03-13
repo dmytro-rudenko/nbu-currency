@@ -21,7 +21,7 @@ const exchangeCurrency = async (amount, fromCurrency, toCurrency = DEFAULT_CURRE
   }
 
   if (fromCurrency === toCurrency) {
-    return sum
+    return amount
   }
 
   const currencyExchangeData = await getCurrencyExchangeData()
