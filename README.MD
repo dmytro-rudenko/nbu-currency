@@ -1,4 +1,4 @@
-Простий node.js модуль для розрахунку курсу валют за допомогою API НБУ (https://bank.gov.ua/ua/open-data/api-dev)
+Простий node.js (неофіційний)модуль для розрахунку курсу валют за допомогою API НБУ (https://bank.gov.ua/ua/open-data/api-dev)
 
 ## Встановлення
 
