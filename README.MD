@@ -9,9 +9,9 @@ npm install nbu-currency
 ## Використання
 
 ```javascript
-const { exchangeCurrency } = require('nbu-currency');
+import nbuCurrency from 'nbu-currency';
 
-exchangeCurrency(100, 'USD', 'UAH')
+nbuCurrency.exchangeCurrency(100, 'USD', 'UAH')
   .then((result) => {
     console.log(result); // 100 USD in UAH
   })
